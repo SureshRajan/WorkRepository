@@ -1,0 +1,14 @@
+﻿<div ng-controller="GetTasks">
+    <p>Mock Backend</p>    
+    <ul>
+        <li ng-repeat="task in tasks">
+            {{task.id}}
+        </li>
+    </ul>
+</div>
+<div ng-controller="GetUpdatedTasks">
+    <button type="submit" ng-click="Search()">PostMe</button>
+    <pre ng-model="result">
+        {{result}}
+    </pre>    
+</div>
